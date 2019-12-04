@@ -1,0 +1,21 @@
+<div class="container header_content">
+	<h2>CarNow {{user_type}} panel</h2>
+    <div class="row">
+		<div class="col-xs-12 tab-list">
+			<div class="tabbable tabs-left">
+				<ul class="nav nav-tabs">
+					<li><a href="./">GoTo Website</a></li>
+					<li [ngClass]="(this.pageName=='profile')?'active':''"><a href="account/profile">Profile</a></li>
+					<li [ngClass]="(this.pageName=='change-password')?'active':''"><a href="account/change_password">Change Password</a></li>
+					<li [ngClass]="(this.pageName=='add-car')?'active':''"><a href="account/add-car">Add Car</a></li>
+					<li [ngClass]="(this.pageName=='car-list')?'active':''"><a href="account/car-list">Car List</a></li>
+				</ul>				
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<ng-content select=".header_content_account_panel"></ng-content>
