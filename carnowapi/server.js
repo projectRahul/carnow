@@ -8,9 +8,9 @@ mongoose.set('useUnifiedTopology', true);
 mongoose.connect(dbConfig.url, {
     useNewUrlParser: true
 }).then(() => {
-    console.log("Successfully connected to the database");    
+    // console.log("Successfully connected to the database");    
 }).catch(err => {
-    console.log('Could not connect to the database. Exiting now...', err);
+    // console.log('Could not connect to the database. Exiting now...', err);
     process.exit();
 });
 
@@ -18,10 +18,11 @@ mongoose.connect(dbConfig.url, {
 
 const express = require('express');
 const bodyParser = require('body-parser');
+var cors = require('cors');
 
 // create express app
 const app = express();
-
+app.use(cors());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
 
