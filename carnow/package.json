@@ -24,7 +24,7 @@
     "angular-notifier": "^6.0.1",
     "bootstrap": "^3.4.1",
     "core-js": "^2.5.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngx-color": "^4.1.0",
     "ngx-cookie-service": "^2.2.0",
     "rxjs": "^6.5.2",
